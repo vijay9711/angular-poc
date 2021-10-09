@@ -1,0 +1,11 @@
+.login-wrapper{
+    padding: 10px;
+    .user-input{
+        width: 100%;
+    }
+    
+}
+::ng-deep.mat-radio-button:not(:first-child){
+    // margin-left: 20px;
+    margin: 15px 20px;
+}

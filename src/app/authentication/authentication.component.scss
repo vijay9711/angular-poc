@@ -1,0 +1,22 @@
+.auth-wrapper{
+    background-image: url('../../assets/img/dronebg.jpg');
+    height: 100vh;
+    width: 100vw;
+    background-repeat: no-repeat;
+    background-attachment: initial;
+    background-position: center; 
+    background-size: cover;
+    overflow: hidden;
+    display: flex;
+    .auth-card-wrapper{
+        min-height: 50vh;
+        width: 30vw;
+        margin: auto;
+        margin-left: 5rem;
+        padding:10px;
+        backdrop-filter: blur(16px) saturate(180%);
+        -webkit-backdrop-filter: blur(16px) saturate(180%);
+        background-color: rgba(255, 255, 255, 0.65);
+        border-radius: 12px;
+    }
+}

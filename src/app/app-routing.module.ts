@@ -3,7 +3,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { AuthenticationComponent } from './authentication/authentication.component';
 
 const routes: Routes = [
-  { path: '/', redirectTo: '/', pathMatch: 'full', component:AuthenticationComponent },
+  { path: '', component: AuthenticationComponent },
 ];
 
 @NgModule({
