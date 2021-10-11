@@ -1,31 +1,60 @@
 <div class="login-wrapper">
+    <div class=" logo-wrapper row p-0 m-0">
+        <!-- <img src="../../../assets/img/logo.jpg" class="company-logo"> -->
+        <span>SKYEYE</span>
+    </div>
     <form [formGroup]="signupForm" (submit)="submit()">
-        <mat-form-field class="user-input mt-4" appearance="fill">
+        <mat-form-field class="user-input " appearance="fill">
+            <mat-label>Username</mat-label>
+            <input matInput placeholder="" formControlName="username">
+        </mat-form-field>
+        <mat-form-field class="user-input" appearance="fill">
             <mat-label>Email</mat-label>
             <input matInput placeholder="" formControlName="email">
         </mat-form-field>
-        <mat-form-field class="user-input" appearance="fill">
-            <mat-label>Password</mat-label>
-            <input matInput placeholder="" formControlName="password">
-        </mat-form-field>
-        <mat-form-field class="user-input" appearance="fill">
-            <mat-label>Confirm Password</mat-label>
-            <input matInput placeholder="" formControlName="confirmPassword">
-        </mat-form-field>
-        <mat-form-field class="user-input" appearance="fill">
-            <mat-label>Phone no</mat-label>
-            <input matInput placeholder="" formControlName="phone">
-        </mat-form-field>
+        <div class="row p-0 m-0">
+            <div class="col-6 p-0 m-0">
+                <mat-form-field class="user-input" appearance="fill">
+                    <mat-label>Password</mat-label>
+                    <input matInput type="password" placeholder="" formControlName="password">
+                </mat-form-field>
+            </div>
+            <div class="col-6 p-0 m-0">
+                <mat-form-field class="user-input" appearance="fill">
+                    <mat-label>Confirm Password</mat-label>
+                    <input matInput type="password" placeholder="" formControlName="confirmPassword">
+                </mat-form-field>
+            </div>
+        </div>
+        
+        <div class="row p-0 m-0">
+            <div class="col-6 p-0 m-0">
+                <mat-form-field class="user-input" appearance="fill">
+                    <mat-label>Phone no</mat-label>
+                    <input matInput placeholder="" formControlName="phone">
+                </mat-form-field>
+            </div>
+            <div class="col-6 p-0 m-0">
+                <mat-form-field class="user-input" appearance="fill">
+                    <mat-label>Age</mat-label>
+                    <input matInput type="number" placeholder="" formControlName="age">
+                </mat-form-field>
+            </div>
+        </div>
+        
+        
+        
+        
         <mat-radio-group aria-label="Select an option" class="" formControlName="type">
             <mat-radio-button value="user" color="primary" class="ml-2">User</mat-radio-button>
             <mat-radio-button value="admin" color="primary" class="ml-2">Admin</mat-radio-button>
         </mat-radio-group>
         <div class="row p-0 m-0">
-            <div class="col-12 p-0 m-0 d-flex align-items-center">
-                <button type="submit" mat-raised-button color="primary" class="w-50 m-auto" (click)="submit()">Login</button>
+            <div class="col-6 p-0 m-0 d-flex align-items-center">
+                <button type="submit" mat-raised-button color="primary" class="w-50 m-auto">Signup</button>
             </div>
-            <div class="col-12 p-0 m-0 d-flex align-items-center">
-                <button type="submit" mat-raised-button color="basic" class=" w-50 m-auto my-4" (click)="submit()">Cancel</button>
+            <div class="col-6 p-0 m-0 d-flex align-items-center">
+                <button mat-raised-button color="basic" class=" w-50 m-auto my-4" (click)="clearData()">Cancel</button>
             </div>
         </div>
     </form>

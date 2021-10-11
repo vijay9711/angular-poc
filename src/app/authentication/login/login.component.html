@@ -1,4 +1,8 @@
 <div class="login-wrapper">
+    <div class=" logo-wrapper row p-0 m-0">
+        <!-- <img src="../../../assets/img/logo.jpg" class="company-logo"> -->
+        <span>SKYEYE</span>
+    </div>
     <form [formGroup]="loginForm" (submit)="submit()">
         <mat-form-field class="user-input mt-4" appearance="fill">
             <mat-label>Email</mat-label>
@@ -9,10 +13,10 @@
             <input matInput placeholder="" formControlName="password">
         </mat-form-field>
         <div class="row p-0 m-0">
-            <div class="col-12 p-0 m-0 d-flex align-items-center">
+            <div class="col-6 p-0 m-0 d-flex align-items-center">
                 <button type="submit" mat-raised-button color="primary" class="w-50 m-auto" (click)="submit()">Login</button>
             </div>
-            <div class="col-12 p-0 m-0 d-flex align-items-center">
+            <div class="col-6 p-0 m-0 d-flex align-items-center">
                 <button type="submit" mat-raised-button color="basic" class=" w-50 m-auto my-4" (click)="submit()">Cancel</button>
             </div>
         </div>

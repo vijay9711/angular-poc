@@ -1,6 +1,18 @@
 .login-wrapper{
     padding: 10px;
+    .logo-wrapper{
+        span{
+            color: #2e2e2e;
+            font-weight: 600;
+            font-size: 20px;
+            letter-spacing: 30px;
+            text-align: center;
+            margin-top: 10px;
+        }
+    }
+
     .user-input{
         width: 100%;
+        font-size: 18px;
     }
 }
