@@ -62,18 +62,11 @@ export class SignupComponent implements OnInit {
         'Added!',
         'User added successfully.',
         'success'
-      ).then(res=>{
-        this.router.navigate(['/'])
-        console.log("then")
-        this.clearData();
-      })
-    },err=>{
-      console.log(err);
-      Swal.fire(
-        'Error!',
-        'Something went wrong. Try again please.',
-        'error'
       )
+
+      this.router.navigate(['/layout/dashboard'])
+      console.log("then")
+      this.clearData();
     })
   }
   clearData(){

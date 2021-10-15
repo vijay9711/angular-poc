@@ -15,13 +15,21 @@ import { AuthenticationComponent } from './authentication/authentication.compone
 import { LoginComponent } from './authentication/login/login.component';
 import { SignupComponent } from './authentication/signup/signup.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { DashboardComponent } from './pages/dashboard/dashboard.component';
+import { LayoutComponent } from './pages/layout/layout.component';
+import { UserSectionComponent } from './pages/user-section/user-section.component';
+import { AboutComponent } from './pages/about/about.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     AuthenticationComponent,
     LoginComponent,
-    SignupComponent
+    SignupComponent,
+    DashboardComponent,
+    LayoutComponent,
+    UserSectionComponent,
+    AboutComponent
   ],
   imports: [
     BrowserModule,

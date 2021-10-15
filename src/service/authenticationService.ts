@@ -13,4 +13,8 @@ export class AunthenticationService{
         let url = this.REST_API_SERVER + `/api/user`;
         return this.httClient.post(url, data);
     }
+    public login(data: any){
+        let url = this.REST_API_SERVER + `/api/user-auth`;
+        return this.httClient.post(url, data);
+    }
 }

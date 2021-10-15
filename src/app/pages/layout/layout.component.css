@@ -1,0 +1,35 @@
+.nav-bar-container{
+    background-color: #495057;
+    color: #ffffff;
+    height: 80px;
+    width: 100vw;
+    display: flex;
+}
+.item.wrapper{
+    margin: auto;
+    align-items: flex-end;
+    text-align: center;
+}
+.item{
+    color: #ffffff;
+    margin: 0px 10px;
+    font-size: 18px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    font-family:sans-serif;
+    padding: 10px;
+    background-color: transparent;
+    position: relative;
+    cursor: pointer;
+}
+.active-item:after{
+    content: '';
+    width: 100%;
+    height: 5px;
+    background-color: #ffffff;
+    text-decoration: underline;
+    border-radius: 5px;
+    left: 0;
+    position: absolute;
+    bottom: 0;
+}

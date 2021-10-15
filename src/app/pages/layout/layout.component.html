@@ -1,0 +1,6 @@
+<div class="nav-bar-container">
+    <div class="item-wrapper m-auto d-flex">
+        <div [class]="item.active ? 'active-item item':'item'" (click)="goToPage(i)" *ngFor="let item of menuItem; index as i;">{{item.name}}</div>
+    </div>
+</div>
+<router-outlet></router-outlet>
